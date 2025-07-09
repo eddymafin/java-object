@@ -36,6 +36,13 @@ public class Driver {
 		//		下記で、計上が逆であることになった
 		member1.refund(200000); //20万円返品
 		member2.sell(200000); //20万円売上
+		
+//		下記、コンストラクターの売上がない場合、初期化して0円となる
+		SalesEmployee member3 =new SalesEmployee("田中三郎");
+		System.out.println();
+		member3.displayInfo();
+		
+		
 		System.out.println("---------返品、売上処理後---\n");
 		member1.displayInfo();
 		System.out.println();

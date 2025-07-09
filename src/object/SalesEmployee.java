@@ -40,6 +40,15 @@ public class SalesEmployee {
 		System.out.println("\nコンストラクタ内");
 		System.out.println("インスタンス数" + instanceCnt);
 	}
+	
+	/**
+	 * 名前・売上合計金額(0)の初期化 コンストラクターのオーバーロード
+	 * @param name
+	 */
+	SalesEmployee(String name){
+//		下記のnameは上部の受け取った仮引数、salesAmtは0で呼び出して、フィールドの初期化を行っている
+		this(name ,0);
+	}
 
 	/**
 	 * 会社名の表示 (static)
