@@ -6,6 +6,11 @@ public class SalesEmployee {
 	 * 会社名(static)
 	 */
 	static final String COMPANY_NAME = "株式会社〇〇";
+	
+	/**
+	 * 標準売上金額 (static)
+	 */
+	static final int DEFAULT_SALES_AMT =150000;
 
 	/**
 	 * 作成したインスタンス数(static) クラス共通の変数
@@ -51,6 +56,18 @@ public class SalesEmployee {
 	int sell(int amt) {
 		return salesAmt += amt;
 	}
+	
+	/**
+	 * 売り上げる (標準売上金額) 上部のメソッドのオーバーロード。引数のないパターン。
+	 * デフォルトの売上金額を帰す
+	 * @return　処理後の売上合計金額
+	 */
+	int sell() {
+//		this.sellは上記のメソッドを呼び出している
+		return this.sell(DEFAULT_SALES_AMT);
+	}
+	
+	
 
 	/**
 	 * 返品を受け付ける

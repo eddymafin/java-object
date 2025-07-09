@@ -17,6 +17,14 @@ public class Driver {
 		//		member1.salesAmt = 200000;
 		System.out.println("");
 		member1.displayInfo();
+		
+		//売上・情報表示
+		member1.sell(300000);  //引数30万円
+		member1.displayInfo();
+		
+		//デフォルト売上金額で、売上情報表示
+		member1.sell(); //引数なし
+		member1.displayInfo();
 
 		SalesEmployee member2 = new SalesEmployee("鈴木次郎", 500000);
 		//		コンストラクターを設置したので、削除
