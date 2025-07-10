@@ -37,8 +37,8 @@ public class SalesEmployee {
 		this.name = name;
 		this.salesAmt = salesAmt;
 		instanceCnt++; //作成したインスタンス数
-		System.out.println("\nコンストラクタ内");
-		System.out.println("インスタンス数" + instanceCnt);
+//		System.out.println("\nコンストラクタ内");
+//		System.out.println("インスタンス数" + instanceCnt);
 	}
 	
 	/**
